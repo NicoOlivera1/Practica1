@@ -1,0 +1,162 @@
+public class Main {
+    public static void main(String[] args) {
+
+    }
+}
+//clase Electrodomestico
+public class Electrodomestico {
+    private double precio;
+    private String color;
+    private char consumo;
+    private double peso;
+
+    public Electrodomestico() {
+
+    }
+
+    public Electrodomestico(double precio, String color, char consumo, double peso) {
+        this.precio = precio;
+        this.color = color;
+        this.consumo = consumo;
+        this.peso = peso;
+    }
+
+    public double getPrecio() {
+    return this.precio;
+    }
+
+    public void setPrecio(int precio) {
+        this.precio = precio;
+    }
+
+    public String getColor() {
+        return this.color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public char getConsumo() {
+        return this.consumo;
+    }
+
+    public void setConsumo(char consumo) {
+        this.consumo = consumo;
+    }
+
+    public double getPeso() {
+        return this.peso;
+    }
+
+    public void setPeso(double peso) {
+        this.peso = peso;
+    }
+
+
+    public static void comprobarConsumoEnergetico (char letra) {
+        switch (letra){
+            case 'a' :
+                System.out.println("a");
+            case 'b' :
+                System.out.println("b");
+            case 'c' :
+                System.out.println("c");
+            case 'd' :
+                System.out.println("d");
+            case 'e' :
+                System.out.println("e");
+            case 'f' :
+                System.out.println("f");
+            default:
+                System.out.println("f por defecto");
+        }
+
+
+
+    }
+
+
+
+
+    public String comprobarColor (String color){
+
+
+      return "abc" ;
+    }
+     public String crearElectrodomestico(){
+        return "abc";
+     }
+     public String precioFinal(){
+        return "abc";
+     }
+
+
+//clase tele
+public class Televisor extends Electrodomestico {
+    private double resolucion;
+    private boolean sintonizadorTDT;
+
+    public Televisor() {
+    }
+
+    public Televisor(double precio, String color, char consumo, double peso, double resolucion, boolean sintonizadorTDT) {
+        super(precio, color, consumo, peso);
+        this.resolucion = resolucion;
+        this.sintonizadorTDT = sintonizadorTDT;
+    }
+
+    public double getResolucion() {
+        return this.resolucion;
+    }
+
+    public void setResolucion(double resolucion) {
+        this.resolucion = resolucion;
+    }
+
+    public boolean isTDT() {
+        return this.sintonizadorTDT;
+    }
+
+    public void setTDT(boolean TDT) {
+        this.sintonizadorTDT = sintonizadorTDT;
+    }
+    public String crearTelevisor (){
+    return "abc";
+    }
+    public String PrecioFinal(){
+       return "abc";
+    }
+}
+//clase lavadora
+public class Lavadora extends Electrodomestico {
+    private String carga;
+
+    public Lavadora() {
+
+    }
+
+    public Lavadora(String carga) {
+        this.carga = carga;
+    }
+
+    public Lavadora(int precio, String color, char consumo, double peso, String carga) {
+        super(precio, color, consumo, peso);
+        this.carga = carga;
+    }
+
+    public String getCarga() {
+        return this.carga;
+    }
+
+    public void setCarga(String carga) {
+        this.carga = carga;
+    }
+    public String crearlavadora(){
+      return "abc";
+    }
+    public String precioFinal(){
+        return "abc";
+    }
+
+}
